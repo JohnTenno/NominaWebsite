@@ -7,7 +7,12 @@
 */
 (function() {
   "use strict";
-
+  window.addEventListener('DOMContentLoaded', () => {
+    const loader = document.getElementById('loader');
+    loader.classList.add('hidden');
+    document.body.style.overflow = 'auto'; // Restaura el desplazamiento después de ocultar el contenedor de carga
+  });
+  
   /**
    * Easy selector helper function
    */
